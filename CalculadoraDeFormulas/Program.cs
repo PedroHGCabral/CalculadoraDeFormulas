@@ -5,6 +5,26 @@ Calculadora calc = new Calculadora();
 
 do
 {
+    string test = Console.ReadLine();
+    try
+    {
+        double x = Convert.ToDouble(test);
+        Console.WriteLine(x);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+    }
+}
+while (resposta != "fim");
+
+//Console.WriteLine("Digite a equação:");
+//string equacao = Console.ReadLine();
+//resposta = calc.Equacao_com_Incognita(equacao);
+
+/*
+do
+{
     Console.WriteLine("Digite sF, sI, v e t. Deixe em branco e dê enter no que quer encontrar");
     string? sF = Console.ReadLine();
     string? sI = Console.ReadLine();
@@ -23,3 +43,4 @@ double c = double.Parse(Console.ReadLine());
 
 resposta = calc.Funcao_Quadratica(a, b, c);
 Console.WriteLine(resposta);
+*/

@@ -6,7 +6,14 @@ namespace CalculadoraDeFormulas
         public string Funcao { get; set; }
         public string Tipo { get; set; }
 
+        public string Equacao_com_Incognita(string equacao)
+        {
+            string resposta = "";
+            equacao.Split(" ");
+            
 
+            return resposta;
+        }
         public string Funcao_Quadratica(double a, double b, double c)
         {
             double x1 = 0, x2 = 0, Xvertice = 0, Yvertice = 0;
